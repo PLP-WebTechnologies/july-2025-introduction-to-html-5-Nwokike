@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+      1. Page Metadata
+
+      These meta tags follow the SEO part of the guidelines.
+      They help the page display well on all devices and describe the content for search engines.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, accessible HTML5 web page teaching how to make Nigerian Jollof Rice. Created for the Web Development V2 Week One assignment.">
+
+    <title>How to Make Jollof Rice – HTML5 Assignment</title>
+</head>
+<body>
+
+    <!-- 
+      2. Header Section
+
+      I'm using <header> and <nav> to define the top part of the page, 
+      just like the assignment said: create a clearly defined header and navigation area.
+    -->
+    <header>
+        <h1>How to Make Nigerian Jollof Rice</h1>
+
+        <nav aria-label="Main navigation">
+            <!-- Simple navigation, included as directed in the instructions -->
+            <p>Jump to a section:</p>
+            <ul>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#chef-tip">Chef's Tip</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+      3. Main Content Area
+
+      This <main> section holds the core content of the page, 
+      which is a requirement in the assignment for semantic structure and accessibility.
+    -->
+    <main>
+
+        <!-- 
+          4. Recipe Article (included as a complete content section)
+
+          I used <article> to wrap the whole recipe, following the requirement 
+          to use appropriate semantic elements. Articles are best for stand-alone content.
+        -->
+        <article id="recipe" aria-labelledby="recipe-heading">
+
+            <!-- 
+              A short intro section about the recipe.
+              As per the guidelines, I’m using heading tags in logical order and meaningful text.
+            -->
+            <section>
+                <h2 id="recipe-heading">About This Recipe</h2>
+                <p>This is a simple guide on how to make Nigerian Jollof Rice, created as part of the July 2025 HTML5 assignment. The structure and layout follow accessibility and SEO best practices as requested.</p>
+            </section>
+
+            <!-- 
+              Ingredients list
+
+              I used an unordered list here because the order of items doesn’t matter,
+              which aligns with semantic HTML5 use, as mentioned in our Class.
+            -->
+            <section>
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 cups long-grain parboiled rice</li>
+                    <li>1 cup tomato and pepper blend</li>
+                    <li>1 medium onion (chopped)</li>
+                    <li>3 tablespoons vegetable oil</li>
+                    <li>2 seasoning cubes</li>
+                    <li>1 teaspoon thyme and curry</li>
+                    <li>2 cups chicken or beef broth</li>
+                </ul>
+            </section>
+
+            <!-- 
+              Step-by-step instructions
+
+              I used <ol> here because the steps must be followed in a specific order.
+              This helps both users and screen readers follow the flow correctly.
+            -->
+            <section>
+                <h2>Instructions</h2>
+                <ol>
+                    <li>Heat oil and sauté chopped onions.</li>
+                    <li>Add the tomato-pepper mix and cook until the oil separates.</li>
+                    <li>Pour in broth and seasonings, then bring to a boil.</li>
+                    <li>Add washed rice, stir, and cover.</li>
+                    <li>Cook on low heat until rice is soft and fully cooked.</li>
+                </ol>
+            </section>
+
+        </article>
+
+        <!-- 
+          5. Extra Info with <aside>
+
+          I used <aside> to show supporting information that’s not part of the main recipe.
+          This is what I think the assignment suggests for semantic structure.
+        -->
+        <aside id="chef-tip" aria-labelledby="tip-heading">
+            <h3 id="tip-heading">Chef's Tip</h3>
+            <p>To get that classic smoky "party rice" flavor, let the rice burn slightly at the bottom of the pot before turning off the heat.</p>
+        </aside>
+
+    </main>
+
+    <!-- 
+      6. Footer Section
+
+      This section wraps up the page with author info and a link to my portfolio,
+      just like the assignment says to include meaningful footer content.
+    -->
+    <footer id="contact" aria-label="Footer">
+        <p><small>Created by Onyeka Nwokike – July 2025 Cohort</small></p>
+        <p><small>Portfolio: 
+            <a href="https://nwokike.github.io/portfolio/" target="_blank" rel="noopener noreferrer">
+                nwokike.github.io/portfolio/
+            </a>
+        </small></p>
+    </footer>
+
+</body>
+</html>
 
